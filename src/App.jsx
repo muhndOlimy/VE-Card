@@ -63,7 +63,7 @@ function App() {
       />
       <p className="card__label">To my Beautiful <span>MonMon</span></p>
       <h1 className="card__title">Will you be my Valentine?</h1>
-      <p className="card__subtitle">On 15th Feb because we are too cool 😎</p>
+      <p className="card__subtitle">On 15th Feb because we are too cool 😎 or 14th 👀</p>
 
       <div className="card__actions">
         <button type="button" className="btn btn--yes" onClick={handleYes}>
