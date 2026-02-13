@@ -1,0 +1,155 @@
+.card {
+  --card-bg: linear-gradient(145deg, #2d1b2e 0%, #1a0f1c 50%, #0d080d 100%);
+  --card-border: rgba(255, 182, 193, 0.25);
+  --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 182, 193, 0.08);
+  --accent: #ffb6c1;
+  --accent-soft: #ffc0cb;
+  --text: #fce4ec;
+  --text-muted: #f8bbd9;
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: var(--card-bg);
+  border-radius: 24px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  overflow: visible;
+}
+
+.card--success {
+  --card-bg: linear-gradient(145deg, #2d1b2e 0%, #1a0f1c 100%);
+}
+
+.card__gif {
+  display: block;
+  width: 250px;
+  height: auto;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+}
+
+.card__label {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.2em;
+  text-transform: none;
+  margin: 0 0 0.5rem;
+}
+
+.card__label span {
+  text-transform: none;
+}
+
+.card__title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+  text-shadow: 0 0 30px rgba(255, 182, 193, 0.3);
+}
+
+.card__title--success {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card__subtitle {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 0 0 2rem;
+  font-style: italic;
+}
+
+.card__message {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.35rem;
+  color: var(--text);
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.card__signature {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  color: var(--accent-soft);
+  margin: 0;
+}
+
+.card__actions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.card__date-text {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.card__success-gif {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1rem;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.btn {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn--yes {
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(233, 30, 99, 0.4);
+}
+
+.btn--yes:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 28px rgba(233, 30, 99, 0.5);
+}
+
+.btn--yes:active {
+  transform: scale(0.98);
+}
+
+.btn--no {
+  min-height: 2.75rem;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  line-height: 1.25;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 182, 193, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.btn--no:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
